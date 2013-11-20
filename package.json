@@ -45,5 +45,16 @@
   "main": "./lib/node/index.js",
   "engines": {
     "node": "*"
+  },
+  "testling": {
+    "harness": "mocha",
+    "files": "test/*.js",
+    "browsers": {
+      "ie": [ 8, 9, 10 ],
+      "firefox": [ 13 ],
+      "chrome": [ 20 ],
+      "safari": [ 5.1 ],
+      "opera": [ 12 ]
+    }
   }
 }
